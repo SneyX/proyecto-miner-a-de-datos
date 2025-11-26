@@ -1,0 +1,27 @@
+# Segundo Parcial - Minería de Datos II
+# Tiago Prelato
+
+# PySpark para procesamiento distribuido
+pyspark==3.5.0
+
+# Cassandra Driver para conexión con AstraDB
+cassandra-driver==3.29.1
+
+# AstraDB Python Client
+astrapy==1.5.2
+
+# Pandas para manipulación de datos
+pandas==2.1.4
+
+# PyArrow para formato Parquet
+pyarrow==14.0.2
+
+# Jupyter para notebooks
+jupyter==1.0.0
+jupyterlab==4.0.9
+
+# Utilidades
+python-dotenv==1.0.0
+tqdm==4.66.1
+
+setuptools==80.9.0

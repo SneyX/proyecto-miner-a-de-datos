@@ -1,0 +1,19 @@
+# Ignorar todo por defecto
+*
+
+# Permitir .gitignore
+!.gitignore
+
+# Permitir archivos específicos en la raíz
+!README.md
+!requirements.txt
+!segundo_parcial_pipeline.ipynb
+
+# Permitir la carpeta Dataset
+!Dataset/
+!Dataset/README.txt
+
+# Permitir solo datalake/landing
+!Dataset/datalake/
+!Dataset/datalake/landing/
+!Dataset/datalake/landing/**
