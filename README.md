@@ -60,7 +60,7 @@ Utilizando **PySpark** y siguiendo la **Arquitectura Lambda**, el pipeline:
 ║   └─ genai_tokens_by_org_date (tokens, costo estimado)                       ║
 ╠═══════════════════════════════════════════════════════════════════════════════╣
 ║                           SERVING (AstraDB/Cassandra)                          ║
-║   • 4 Colecciones query-first                                                 ║
+║   • 5 Colecciones query-first (todos los marts)                              ║
 ║   • 5 Consultas requeridas implementadas                                      ║
 ╚═══════════════════════════════════════════════════════════════════════════════╝
 ```
@@ -122,7 +122,7 @@ jupyter notebook segundo_parcial_pipeline.ipynb
 El pipeline generará:
 - Archivos Parquet en `bronze/`, `silver/`, `gold/`
 - Checkpoints de streaming en `checkpoints/`
-- Datos en AstraDB (4 colecciones)
+- Datos en AstraDB (5 colecciones)
 - Registros de quarantine
 
 ---
@@ -159,7 +159,7 @@ El pipeline generará:
 | tickets_by_org_date | ✅ | Soporte - SLA breach |
 | genai_tokens_by_org_date | ✅ | GenAI - tokens/costo |
 | **5. Serving AstraDB** | | |
-| Keyspace/colecciones creadas | ✅ | 4 colecciones |
+| Keyspace/colecciones creadas | ✅ | 5 colecciones |
 | Diseño query-first | ✅ | PKs optimizadas |
 | Carga desde Spark | ✅ | Via astrapy batch |
 | **6. Idempotencia** | | |
@@ -168,7 +168,7 @@ El pipeline generará:
 | **7. Performance** | | |
 | Particionado sensato | ✅ | Por event_date, month |
 | **8. Documentación** | | |
-| Diagrama arquitectura | ✅ | `diagrama_arquitectura.md` |
+| Diagrama arquitectura | ✅ | Incluido en README (sección Arquitectura Lambda) |
 | Diccionario de datos | ✅ | En este README |
 | Decisiones y trade-offs | ✅ | Log de decisiones |
 | **9. Demo - 5 Consultas** | | |
