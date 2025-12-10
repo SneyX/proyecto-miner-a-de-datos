@@ -8,6 +8,8 @@
 !README.md
 !requirements.txt
 !segundo_parcial_pipeline.ipynb
+!Entrega_Final_Proyecto_Cloud_Provider_Analytics.md
+!Diagrama*.png
 
 # Permitir la carpeta Dataset
 !Dataset/
@@ -17,3 +19,7 @@
 !Dataset/datalake/
 !Dataset/datalake/landing/
 !Dataset/datalake/landing/**
+
+# Permitir carpeta de imágenes
+!imagenes/
+!imagenes/**
